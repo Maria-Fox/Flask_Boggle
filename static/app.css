@@ -1,0 +1,84 @@
+body {
+  background-image: url("https://images.unsplash.com/photo-1428908728789-d2de25dbd4e2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTJ8fGNsb3Vkc3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#title {
+  font-size: 4rem;
+  text-align: center;
+  letter-spacing: 25px;
+}
+
+#start {
+  background-color: rgb(121, 202, 223);
+  border-radius: 5px;
+  display: inline-block;
+  position: relative;
+  left: 45%;
+  bottom: 25px;
+  /* right: auto; */
+}
+
+#instructions {
+  font-size: 13px;
+}
+
+#board,
+td {
+  border-collapse: collapse;
+  border: 2px solid black;
+  justify-content: center;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+td {
+  size: 40px;
+}
+
+table {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+h2 {
+  text-align: center;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 2rem;
+}
+
+.letters {
+  padding: 30px;
+  margin: 15px;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  background-image: url("https://images.unsplash.com/photo-1428908728789-d2de25dbd4e2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTJ8fGNsb3Vkc3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60");
+  background-position: center;
+  background-size: cover;
+}
+
+#submit-form {
+  text-align: center;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#score-title {
+  color: rgb(4, 72, 131);
+}
+
+.words {
+  font-size: 2rem;
+}
+
+.msg {
+  font-size: 30px;
+  color: rgba(6, 49, 90, 0.699);
+}

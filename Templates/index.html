@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Boggle</title>
+    <link rel="stylesheet" href="/static/app.css" />
+  </head>
+  <body>
+    <h1 id="title">Boggle</h1>
+
+    <button id="start">Start Game! </button>
+    <p id="instructions">Instructions: Begin by pressing Start Game. This is a <b> timed 60 second game </b>. Search for words and enter them in the from below. You earn points based on the length of the word submited and found in the game board. Words can be created from adjacent letters – that is, letters which are horizontal or vertical neighbors of each other as well as diagonals. The letters must connect to each other in the proper sequence to spell the word correctly. This means that the next letter in the word can be above, below, left, or right of the previous letter in the word (excluding any letters previously used to construct the word). When a round is over, refresh your page to start a new game!   </p>
+    <hr />
+
+    <table id="board">
+      <tbody>
+        {% for row in board %}
+        <tr>
+          {% for cell in row %}
+          <td class="letters">{{ cell }}</td>
+          {% endfor %}
+        </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+
+    <hr />
+
+    <p class="msg">
+      <!-- our JS will put messages here dynamically -->
+    </p>
+
+
+<div id="score-section">
+    <h2 id="score-title">Score: 0</h2>
+
+    <form method="POST" class="add-word" id="submit-form">
+      <h3>Enter Word</h3>
+      <label for="word">
+        <input
+          id="word"
+          name="word"
+          class="word"
+          placeholder="abdominal"
+          autofocus
+        />
+      </label>
+      <button type="submit">Submit</button>
+    </form>
+
+    <ul class="words">
+      <!-- our JS will words here as they score -->
+    </ul>
+
+    <script src="https://unpkg.com/jquery"></script>
+    <script src="https://unpkg.com/axios/dist/axios.js"></script>
+    <script src="/static/appp.js"></script>
+  </body>
+</html>
